@@ -1,0 +1,48 @@
+.SD__Container p {
+    font-weight: 800;
+}
+.SD__Txt{
+    position: relative;
+    height: 300px;
+    flex: 0 1 50%;
+}
+.SD__Txt > div {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+.SD__Heading h2{
+    font-size: 42px;
+    font-weight: 800;
+}
+.SD__Feat__Heading h2 {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.SD__Bene h2{
+    font-size: 18px;
+    font-weight: 900;
+}
+.SD__Bene p{
+    font-size: 16px;
+}
+.p-one p{
+    font-size: 18px;
+    font-weight: 800;
+}
+.p-two > p{
+    font-size: 20px;
+    font-weight: 800;
+}
+.laptop img {
+    position: absolute;
+    width: 400px;
+    height: 340px;
+    /* object-fit: cover; */
+    top: 60%;
+    left: 70%;
+    transform: translateY(-50%);
+    border-radius: 8px;
+}
