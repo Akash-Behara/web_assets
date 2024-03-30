@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+    .Main__container_gsap {
+    max-width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.container_gsap{
+    width: 500vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel{
+    width: 100vw;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.red{
+    background: red;
+}
+.orange{
+    background-color: orange;
+}
+.purple{
+    background-color: purple;
+}
+.green{
+    background-color: green;
+}
+.gray{
+    background-color: gray;
+}
+</style>
+<body>
+    <div class="Main__container_gsap">
+        <div class="container_gsap">
+            <section class="panel red">
+            ONE
+            </section>
+            <section class="panel orange">
+            TWO
+            </section>
+            <section class="panel purple">
+            THREE
+            </section>
+            <section class="panel green">
+            FOUR
+            </section>
+            <section class="panel gray">
+            FIVE
+            </section>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
+            gsap.registerPlugin(ScrollTrigger);
+
+
+let sections = gsap.utils.toArray(".panel");
+
+gsap.to(sections, {
+xPercent: -100 * (sections.length - 1),
+ease: "none",
+scrollTrigger: {
+    trigger: ".Main__container_gsap",
+    start: "top top",
+    // end: "bottom 10%",
+    pin: true,
+    scrub: 1,
+    snap: {
+        snapTo: 1 / (sections.length - 1),
+        duration: 0.1,
+        delay: 0,
+        ease: "power1.inOut"
+      },
+    // snap: 1 / (sections.length - 1),
+    // markers: true,
+    // pinSpacing: false,
+    // base vertical scrolling on how wide the container is so it feels more natural.
+    end: "+=3500",
+}
+});
+    </script>
+</body>
+</html>
