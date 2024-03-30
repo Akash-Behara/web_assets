@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="SD__Main__Container" id="SD">
+        <div class="SD__Section__Heading">
+            <h2>What is S-Designer?</h2>
+            <p>"Low code, no code" (LCNC) refers to a modern approach to software development that emphasizes the use of visual interfaces, drag-and-drop tools, and pre-built components to create applications and workflows with minimal or no traditional coding required.</p>
+        </div>
+        <div class="SD__Content__Container">
+            <div onclick="addTab()" class="w-25 border">ADD TAB</div>
+            <div>
+                <nav class="w-100">
+                    <div class="nav nav-tabs Tabs__Container" id="nav-tab" role="tablist">
+                      <button class="nav-link active Tabs__Txt" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><img src="assets/features.png" alt="features" class="Tabs__Title__img"/> <span class="Tab__Txt__txt">Features</span></button>
+                      <button class="nav-link Tabs__Txt" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><img src="assets/authenticity.png" alt="features" class="Tabs__Title__img"/><span class="Tab__Txt__txt">Benefits</span></button>
+                      <button class="nav-link Tabs__Txt" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-test" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><img src="assets/features.png" alt="features" class="Tabs__Title__img"/><span class="Tab__Txt__txt">Test</span></button>
+                      <button class="nav-link Tabs__Txt" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-test2" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><img src="assets/features.png" alt="features" class="Tabs__Title__img"/><span class="Tab__Txt__txt">Test2</span></button>
+                    </div>
+                </nav>
+                <div class="tab-content mt-3 w-100" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="SD__Feat__Container">
+                            <div class="SD__Feat__Container__Left">
+                                <!-- <div class="SD__Key__Txt mb-2">Key Features</div> -->
+                                <div class="d-flex flex-wrap ">
+                                    <div class="mb-2">
+                                        <div class="SD__Feat__Heading d-flex ">1. <h2 class="m-0 p-0">Visual Development Environment:</h2></div>
+                                        <div class="ms-4 ms-lg-5 SD__Feat__sub">LCNC platforms provide intuitive, drag-and-drop interfaces that enable users to design and build applications visually, without writing code.</div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="SD__Feat__Heading d-flex ">2. <h2 class="m-0 p-0">Pre-built Components and Templates:</h2></div>
+                                        <div class="ms-4 ms-lg-5 SD__Feat__sub">LCNC platforms offer a library of pre-built components, templates, and integrations that users can easily incorporate into their applications or workflows.</div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="SD__Feat__Heading d-flex ">3. <h2 class="m-0 p-0">Workflow Automation:</h2></div>
+                                        <div class="ms-4 ms-lg-5 SD__Feat__sub">Users can automate repetitive tasks and streamline complex workflows by visually designing sequences of actions and triggers.</div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="SD__Feat__Heading d-flex ">4. <h2 class="m-0 p-0">Empowerment of Citizen Developers:</h2></div>
+                                        <div class="ms-4 ms-lg-5 SD__Feat__sub">LCNC platforms democratize software development by enabling individuals with domain expertise, but limited coding experience, to create custom solutions tailored to their specific needs.</div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="SD__Feat__Heading d-flex ">5. <h2 class="m-0 p-0">Rapid Prototyping and Iteration:</h2></div>
+                                        <div class="ms-4 ms-lg-5 SD__Feat__sub">LCNC empowers users to quickly prototype ideas, experiment with different features, and iterate based on feedback, accelerating the development process.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="SD__Content__Img">
+                                <img src="assets/svg/undraw_programming_re_kg9v.svg" alt="coding" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="SD__Bene__Container">
+                            <div class="SD__Bene__Content__Container">
+                                <div>
+                                    <form action="">
+                                        <label for="fname">First Name</label>
+                                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                        <br />
+                                    
+                                        <input type="radio" id="male" name="gender">
+                                        <label for="male">Male</label>
+                                    
+                                        <input type="radio" id="female" name="gender">
+                                        <label for="female">Female</label>
+                                        <br />
+                                    
+                                        <label for="country">Country</label>
+                                        <select id="country" name="country">
+                                          <option value="australia">Australia</option>
+                                          <option value="canada">Canada</option>
+                                          <option value="usa">USA</option>
+                                        </select>
+                                      
+                                        <input type="submit" value="Submit">
+                                      </form>
+                                </div>
+                            </div>
+                            <div class="SD__Bene__Img__Container">
+                                <img src="assets/svg/undraw_relaxation_re_ohkx.svg" alt="relax coder" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-test" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="Tab__3__Container">
+                            <div>
+                                <p>Lorem ipsum dolor adipisci. Quos, voluptate? Perferendis voluptates, nulla ab blanditiis repellat velit enim! ipsum dolor sit amet consectetur, adipisicing elit. Magni nulla fuga placeat, odit adipisci aliquid commodi sed harum explicabo nisi? consectetur adipisicing elit. Omnis saepe ea magni molestiae optio, vero placeat pariatur quas quaerat reprehenderit.</p>
+                            </div>
+                            <div class="row m-0 p-0 mt-5  justify-content-center  gap-5 w-100 ">
+                                <div class="Moon__Card__Container">
+                                    <div class="Moon__Top__Container">
+                                        <div>
+                                            <h2>Heading</h2>
+                                            <p>Short Desc</p>
+                                        </div>
+                                    </div>
+                                    <div class="Moon__Moon"></div>
+                                    <div class="Moon__Bottom__Container">
+                                        <div class="Clip__helper__txt"></div>
+                                        <p>Lorem, ipsum dolor sit consectetur adipisicing elit. Aliquid, aut nemo iste iure quibusdam quos dolorum quidem sed eius repudiandae animi natus eum, pariatur magni impedit consectetur. Dolores, aspernatur consequuntur?</p>
+                                    </div>
+                                </div>
+
+                                <div class="Aboutus__Card__Tab px-0 col-3 ">
+                                    <img src="https://images.unsplash.com/photo-1707343843437-caacff5cfa74?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img"/>
+                                    <div class="Card__Content">
+                                        <h3>Heading</h3>
+                                        <p class="Card__Content_Short_Desc">Short Desc</p>
+                                        <p>Lorem ipsum dolor excepturi odit ullam doloremque accusantium mollitia libero officiis laudantium optio, deleniti a natus dolorem eaque distinctio nobis temporibus in accusamus quidem est? Pariatur?<span> <button id="openModalBtn">Know more...</button></span></p>
+                                    </div>
+                                </div>
+                                <div class="Aboutus__Card__Table col-3 ">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                  <th scope="col">#</th>
+                                                  <th scope="col">First</th>
+                                                  <th scope="col">Last</th>
+                                                  <th scope="col">Handle</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <th scope="row">1</th>
+                                                  <td>Mark</td>
+                                                  <td>Otto</td>
+                                                  <td>@mdo</td>
+                                                </tr>
+                                                <tr>
+                                                  <th scope="row">2</th>
+                                                  <td>Jacob</td>
+                                                  <td>Thornton</td>
+                                                  <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                  <th scope="row">3</th>
+                                                  <td colspan="2">Larry the Bird</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                              </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="table-responsive mt-2">
+                                        <table class="table table-bordered Glow__Table">
+                                            <thead>
+                                                <tr>
+                                                  <th scope="col">#</th>
+                                                  <th scope="col">First</th>
+                                                  <th scope="col">Last</th>
+                                                  <th scope="col">Handle</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <th scope="row">1</th>
+                                                  <td>Mark</td>
+                                                  <td>Otto</td>
+                                                  <td>@mdo</td>
+                                                </tr>
+                                                <tr>
+                                                  <th scope="row">2</th>
+                                                  <td>Jacob</td>
+                                                  <td>Thornton</td>
+                                                  <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                  <th scope="row">3</th>
+                                                  <td colspan="2">Larry the Bird</td>
+                                                  <td>@twitter</td>
+                                                </tr>
+                                              </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-test2" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="Tab__3__Container">
+                            <div>
+                                <p>Lorem ipsum dolor adipisci. Quos, voluptate? Perferendis voluptates, nulla ab blanditiis repellat velit enim! ipsum dolor sit amet consectetur, adipisicing elit. Magni nulla fuga placeat, odit adipisci aliquid commodi sed harum explicabo nisi? consectetur adipisicing elit. Omnis saepe ea magni molestiae optio, vero placeat pariatur quas quaerat reprehenderit.</p>
+                            </div>
+                            <div class="row m-0 p-0 mt-5  justify-content-center  gap-5 w-100 ">
+                                <div class="Moon__Card__Container">
+                                    <div class="Moon__Top__Container">
+                                        <div>
+                                            <h2>Heading</h2>
+                                            <p>Short Desc</p>
+                                        </div>
+                                    </div>
+                                    <div class="Moon__Moon"></div>
+                                    <div class="Moon__Bottom__Container">
+                                        <div class="Clip__helper__txt"></div>
+                                        <p>Lorem, ipsum dolor sit consectetur adipisicing elit. Aliquid, aut nemo iste iure quibusdam quos dolorum quidem sed eius repudiandae animi natus eum, pariatur magni impedit consectetur. Dolores, aspernatur consequuntur?</p>
+                                    </div>
+                                </div>
+
+                                <div class="Fancy__Animated__Card">
+                                    <div class="content">
+                                        <div class="back">
+                                            <div class="back-content">
+                                                <div class="services_img__container ">
+                                                    <img src="assets/chatbot_services.png" alt="Product immage" id="Product immage" class="services_img_1 services_img_1_move"/>
+                                                    <img src="assets/Product_services.png" alt="Product immage" id="Product immage2" class="services_img_2 services_img_2_move"/>
+                                                </div>
+                                                <div class=" ">
+                                                    <div class="Services__Content__Container d-flex flex-column">
+                                                        <h3 class="text-center "><span class="services_title_color">/</span>Internet & Intranet Solutions<span class="services_title_color">/</span></h3>
+                                                        <ul class="w-100 ">
+                                                            <li class="d-flex  justify-content-start align-items-center gap-1 "><i class="bi bi-check2"></i>Product Development</li>
+                                                            <li class="d-flex  justify-content-start align-items-center gap-1 "><i class="bi bi-check2"></i>Development Projects</li>
+                                                            <li class="d-flex  justify-content-start align-items-center gap-1 "><i class="bi bi-check2"></i>Software Implementation</li>
+                                                            <li class="d-flex  justify-content-start align-items-center gap-1 "><i class="bi bi-check2"></i>ERP Integration</li>
+                                                            <li class="d-flex  justify-content-start align-items-center gap-1 "><i class="bi bi-check2"></i>E-Commerce Applications</li>
+                                                            <li class="d-flex  justify-content-start align-items-center gap-1 "><i class="bi bi-check2"></i>Turn-Key (E2E) basis</li>
+                                                            <li class="d-flex  justify-content-start align-items-center gap-1 "><i class="bi bi-check2"></i>Subcontracting</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="front">
+                                            
+                                            <div class="img">
+                                                <div class="circle"></div>
+                                                <div class="circle" id="right"></div>
+                                                <div class="circle" id="bottom"></div>
+                                            </div>
+                                    
+                                            <div class="front-content">
+                                                <div class="mt-2 p-2">
+                                                    <p class="text-start m-0 p-0 Service__Card1__Heading">Our development methodology is based on two approaches,<br/>
+                                                        <div class="Main__Point__Txt">
+                                                            <div class="Bullet__Point__Circle"></div>
+                                                            <div class="text-center">"User-centric"</div>
+                                                        </div>
+                                                        <div class="Main__Point__Txt">
+                                                            <div class="Bullet__Point__Circle"></div>
+                                                            <div class="text-center">"Total-Cost-of-Ownership (TCO) - centric"</div>
+                                                        </div>
+                                                    </p>
+                                                </div>
+                                                <div class="text-center p-1 Services__Internet__Txt">
+                                                    <p>
+                                                        <span class="Services__Detail__Point">User-centric </span>approach of Small Planet exactly revolves around this recent concept - "how the User is going to feel about our software". Note, this approach is One Step Ahead of customer-centric approach (i.e. customer satisfaction or customer delight). The End Users of a software are one step Further Down the Line.
+                                                    </p>
+                                                    <p>
+                                                        <span class="Services__Detail__Point">TCO-centric </span>approach, affects the entire development and maintenance cycle. We need to design the software in such a way that the initial cost of development remains under control and Also the future Several Years of Maintenance and Service cost remains affordable.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="Fancy__Animated__Card">
+                                    <div class="content">
+                                        <div class="back">
+                                            <div class="back-content">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered text-white">
+                                                        <thead>
+                                                            <tr>
+                                                              <th scope="col">#</th>
+                                                              <th scope="col">First</th>
+                                                              <th scope="col">Last</th>
+                                                              <th scope="col">Handle</th>
+                                                            </tr>
+                                                          </thead>
+                                                          <tbody>
+                                                            <tr>
+                                                              <th scope="row">1</th>
+                                                              <td>Mark</td>
+                                                              <td>Otto</td>
+                                                              <td>@mdo</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <th scope="row">2</th>
+                                                              <td>Jacob</td>
+                                                              <td>Thornton</td>
+                                                              <td>@fat</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <th scope="row">3</th>
+                                                              <td colspan="2">Larry the Bird</td>
+                                                              <td>@twitter</td>
+                                                            </tr>
+                                                          </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="front">
+                                            <div class="front-content">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered text-white">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">#</th>
+                                                                <th scope="col">First</th>
+                                                                <th scope="col">Last</th>
+                                                                <th scope="col">Handle</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <th scope="row">1</th>
+                                                                <td>Mark</td>
+                                                                <td>Otto</td>
+                                                                <td>@mdo</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">2</th>
+                                                                <td>Jacob</td>
+                                                                <td>Thornton</td>
+                                                                <td>@fat</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">3</th>
+                                                                <td colspan="2">Larry the Bird</td>
+                                                                <td>@twitter</td>
+                                                            </tr>
+                                                            </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <script>
+        const tab = document.getElementById('nav-tab')
+const tabContent = document.getElementById('nav-tabContent')
+let tabTemplate = (id, name) => {
+    return (
+        `
+        <img src="assets/features.png" alt="features" class="Tabs__Title__img"/> <span class="Tab__Txt__txt">${name}</span>
+        <div onclick="removeTab('${id}')">RM</div>
+        `
+    )
+}
+let tabContentTemplate = (id) => {
+    return (
+        `
+            <div class="SD__Bene__Container">
+                <div class="SD__Bene__Content__Container">
+                    <div>
+                        <form action="">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            <br />
+                        
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Male</label>
+                        
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Female</label>
+                            <br />
+                        
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>
+                            
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="SD__Bene__Img__Container">
+                    <img src="assets/svg/undraw_relaxation_re_ohkx.svg" alt="relax coder" />
+                </div>
+            </div>        
+        `
+    )
+}
+let id;
+let ids = []
+const generateId = () => {
+    id = "#nav" + Math.floor(Math.random() * 1000);
+    ids.push(id)
+} 
+function addTab(){
+    generateId()
+    let tabName = prompt('Name of Tab...')
+    if(tabName == null || tabName == ""){
+        alert('Add tab Name')
+        return
+    }
+    let newTab = document.createElement('button')
+    newTab.classList.add('nav-link', 'Tabs__Txt')
+    newTab.id = id
+    newTab.setAttribute('data-bs-toggle', 'tab')
+    newTab.setAttribute('data-bs-target', id)
+    newTab.setAttribute('type', 'button')
+    newTab.setAttribute('role', 'tab')
+    newTab.innerHTML = tabTemplate(id, tabName)
+    tab.append(newTab)
+    addTabContent()
+}
+
+function addTabContent(){
+    let newTab = document.createElement('div')
+    newTab.id = id.substring(1, id.length - 0)
+    newTab.classList.add('tab-pane', 'fade')
+    newTab.setAttribute('role', 'tabpanel')
+    newTab.innerHTML = tabContentTemplate(id)
+    tabContent.append(newTab)
+}
+
+function removeTab(id){
+    console.log('id', id)
+
+    let tab = document.getElementById(id)
+    let tabContent = document.getElementById(id.substring(1))
+    tab.remove()
+    tabContent.remove()
+
+    let deletedId = ids.indexOf(id)
+    let newIds = ids.filter((el) => {
+        return el !== id
+    })
+
+    ids = newIds
+
+    console.log('ids', ids)
+    console.log('ids', ids[ids.length-1])
+    let prevTab = document.getElementById(ids[deletedId - 1 ])
+    let prevTabbtn = document.getElementById(ids[deletedId - 1].substring(1))
+    prevTab.classList.add('active', 'show')
+    prevTabbtn.classList.add('active', 'show')
+}
+
+
+    </script>
+</body>
+</html>
